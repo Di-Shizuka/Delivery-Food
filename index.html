@@ -3,72 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Delivery Food</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-box">
-          <div class="header-logo logo">
-            <img src="./images/logo.png" alt="logo" />
-          </div>
-          <div class="header-controls">
-            <button class="btn-user">
-              <div class="icon-container">
-                <img src="./images/user.svg" alt="user-icon" />
-              </div>
-              Войти
-            </button>
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-box">
+            <div class="header-logo logo">
+              <img src="./images/logo.png" alt="logo" />
+            </div>
+            <div class="header-controls">
+              <button class="btn btn-user">
+                <div class="icon-container">
+                  <img src="./images/user.svg" alt="user-icon" />
+                </div>
+                Войти
+              </button>
 
-            <button class="btn-cart">
-              <div class="icon-container">
-                <img src="./images/shopping-cart.svg" alt="cart-icon" />
-              </div>
-              Корзина
-            </button>
+              <button class="btn btn-cart">
+                <div class="icon-container">
+                  <img src="./images/shopping-cart.svg" alt="cart-icon" />
+                </div>
+                Корзина
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main class="main">
-      <div class="container">Здесь будет контент</div>
-    </main>
+      <main class="main">
+        <section class="banner">
+          <div class="container">
+            <div class="banner-item">
+              <div class="banner-item--content">
+                <h1 class="banner-item--title">
+                  Онлайн-сервис <br />доставки еды на дом
+                </h1>
+                <p class="banner-item--subtitle">
+                  Блюда из любимого ресторана привезет курьер в перчатках, маске
+                  и с антисептиком
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="products">
+          <div class="container">
+            <div class="products-header">
+              <h2 class="products-header--title">Рестораны</h2>
+              <!-- <img src="./images/search.svg" alt="search" /> -->
+              <input
+                type="text" placeholder="Поиск блюд и ресторанов"  class="products-header--search"
+              />
+            </div>
+            <div class="products-menu"></div>
+          </div>
+        </section>
+      </main>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-box">
-          <div class="footer-logo logo">
-            <img src="./images/logo.png" alt="logo" />
-          </div>
-          <div class="footer-nav">
-            <ul>
-              <li>Ресторанам</li>
-              <li>Курьерам</li>
-              <li>Пресс-центр</li>
-              <li>Контакты</li>
-            </ul>
-          </div>
-          <div class="footer-social">
-            <a href="#">
-              <div class="social-icon-container">
-                <img src="./images/insta.png" alt="instagram" />
-              </div>
-            </a>
-            <a href="#"
-              ><div class="social-icon-container">
-                <img src="./images/facebook.png" alt="facebook" />
-              </div>
-            </a>
-            <a href="#"
-              ><div class="social-icon-container">
-                <img src="./images/vk.png" alt="vkontakte" />
-              </div>
-            </a>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-box">
+            <div class="footer-logo logo">
+              <img src="./images/logo.png" alt="logo" />
+            </div>
+            <div class="footer-nav">
+              <ul>
+                <li>Ресторанам</li>
+                <li>Курьерам</li>
+                <li>Пресс-центр</li>
+                <li>Контакты</li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <img src="./images/insta.png" alt="instagram" />
+              <img src="./images/facebook.png" alt="facebook" />
+              <img src="./images/vk.png" alt="vkontakte" />
+              <!-- <a href="#"><img src="./images/insta.png" alt="instagram" /></a>
+              <a href="#"><img src="./images/facebook.png" alt="facebook" /></a>
+              <a href="#"><img src="./images/vk.png" alt="vkontakte" /></a> -->
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
