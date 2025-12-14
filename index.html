@@ -9,7 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./scripts/index.js" defer></script>
     <title>Delivery Food</title>
   </head>
   <body>
@@ -22,16 +23,12 @@
             </a>
             <div class="header-controls">
               <button class="btn btn-primary">
-                <div class="icon-container">
-                  <img src="./images/user.svg" alt="user-icon" />
-                </div>
+                <img src="./images/user.svg" alt="user-icon" />
                 Войти
               </button>
 
-              <button class="btn btn-cart">
-                <div class="icon-container">
-                  <img src="./images/shopping-cart.svg" alt="cart-icon" />
-                </div>
+              <button class="btn btn-outline" id="cart-button">
+                <img src="./images/shopping-cart.svg" alt="cart-icon" />
                 Корзина
               </button>
             </div>
@@ -66,7 +63,7 @@
               />
             </div>
 
-            <div class="products-wrapper">
+            <div class="products-wrapper" id="rests-container">
               <a href="./goods.html" class="products-card">
                 <div class="products-card__image">
                   <img src="./images/rests/pizza-plus.jpg" alt="pizza-plus" />
@@ -276,14 +273,34 @@
               </div>
             </div>
 
-            <div class="cart-modal__footer">
+            <div class="cart-item">
+              <p class="cart-item__title">Ролл угорь стандарт</p>
+              <div class="cart-item__controls">
+                <div class="cart-item__controls--price">250 ₽</div>
+                <button class="btn btn-outline">-</button>
+                <div class="cart-item__controls--count">1</div>
+                <button class="btn btn-outline">+</button>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <p class="cart-item__title">Ролл угорь стандарт</p>
+              <div class="cart-item__controls">
+                <div class="cart-item__controls--price">250 ₽</div>
+                <button class="btn btn-outline">-</button>
+                <div class="cart-item__controls--count">1</div>
+                <button class="btn btn-outline">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-modal__footer">
               <div class="cart-modal__footer--price">1250 ₽</div>
               <div class="cart-modal__footer--controls">
                 <button class="btn btn-primary">Оформить заказ</button>
 
-                <button class="btn btn-cart">Отмена</button>
+                <button class="btn btn-outline">Отмена</button>
               </div>
-            </div>
           </div>
         </div>
       </div>
